@@ -1,0 +1,64 @@
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--fundo-navbar);
+    height: 52px;
+    padding-left: 250px;
+    column-gap: 350px;
+    }
+  
+  .bar__nav {
+    display: flex;
+    column-gap: 8px;
+  }
+  
+  #pesquisar {
+    background-color: var(--cor-input);
+    width: 280px;
+    border-radius: 4px;
+    border: none;
+    color: var(--texto-principal);
+  }
+  
+  #pesquisar::placeholder {
+    color: var(--texto-principal);
+    padding-left: 40px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    background: url(./assets/navbar/icone-busca.svg) no-repeat;
+    background-position: 8px;
+  }
+  
+  .menu__opcoes {
+    display: flex;
+  }
+  
+  .menu__opcoes__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--texto-principal);
+    font-size: 12px;
+    justify-content: center;
+  }
+  .menu__opcoes__item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 23px;
+  }
+  
+  .separador {
+    height: 52px;
+    align-self: stretch;
+    padding: 0;
+    margin: 0;
+  }

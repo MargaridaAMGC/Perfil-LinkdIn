@@ -1,0 +1,115 @@
+/*MAIN */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    padding-top: 24px;
+  }
+  /* DIVISAO PARA DUAS COLUNAS PRINCIPAIS */
+  .primeira__coluna {
+    display: flex;
+    flex-direction: column;
+  }
+  /* CONATINER DA PRIMEIRA SECÇAO PERFIL */
+  .perfil {
+    display: grid;
+    width: 780px;
+    background: url(/assets/perfil/Imagem\ de\ capa.svg) no-repeat;
+    background-color: var(--fundo-navbar);
+    background-position: top;
+    border-radius: 16px;
+    grid-template-areas: 
+    "detalhespessoais detalhescarreira";
+    padding-top: 118px;
+    align-content: center;
+    justify-content: space-around;
+    }
+  
+    /* DETALHES AREA DE DETALHES PESSOAIS */
+  #imagem__perfil {
+    height: 160px;
+    width: 160px;
+    padding-bottom: 8px;
+  }
+  
+  .detalhes__info_pessoais {
+    display: flex;
+    flex-direction: column;
+    grid-area: detalhespessoais;
+  }
+  
+  .detalhes__info_pessoais h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px; 
+  }
+  .detalhes__info_pessoais h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px; 
+  }
+  .detalhes__info_pessoais p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; 
+    color: var(--texto-secundario);
+  }
+  
+  .detalhes__info__pessoais__pormenores {
+    display: flex;
+    column-gap: 8px;
+    line-height: 20px;
+  }
+  
+  .detalhes__morada {
+    color: var(--texto-secundario);
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .detalhes__info__pessoais__pormenores p {
+    color: var(--cor-azul);
+    font-weight: 700;
+  }
+
+  .mensagem, .mais {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 16px;
+    padding: 6px 29px;
+    width: 128px;
+    margin-top: 4px;
+    margin-bottom: 24px;
+  }
+
+  .mensagem {
+    background-color: var(--cor-azul);
+    color: var(--fundo-navbar);
+    border: 1px solid var(--fundo-navbar);
+  }
+
+  .mais {
+    background: transparent;
+    border: 1px solid var(--cor-azul);
+  }
+
+/* DETALHES AREA DE DETALHES DE CARREIRA */
+.detalhes__carreira {
+    grid-area: detalhescarreira;
+    margin-top: 148px;
+}
+
+
+  .lista__carreira__item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-top: 8px;
+  }
+  
