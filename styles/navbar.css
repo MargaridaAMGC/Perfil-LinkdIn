@@ -6,13 +6,15 @@
     align-items: center;
     background-color: var(--fundo-navbar);
     height: 52px;
-    padding-left: 250px;
-    column-gap: 350px;
+    justify-content: space-around;
+    column-gap: auto;
+    flex: 1;
     }
   
   .bar__nav {
     display: flex;
     column-gap: 8px;
+    flex-wrap: wrap;
   }
   
   #pesquisar {
@@ -62,3 +64,4 @@
     padding: 0;
     margin: 0;
   }
+  

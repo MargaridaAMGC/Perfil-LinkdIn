@@ -110,6 +110,34 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
-    padding-top: 8px;
+    padding-top: 9px;
   }
+
+  /* DESTAQUES */
+
+  .destaques {
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+  }
+
+  .destaques h2 {
+    font-size: 20px;
+    color: var(--texto-principal);
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .lista__destaques {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lista__destaques__item {
+    border-radius: 8px;
+    border: 1px solid var(--texto-secundario);
+  }
+  
+
+
   
