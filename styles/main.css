@@ -119,24 +119,74 @@
     display: flex;
     flex-direction: column;
     width: 780px;
+    background-color: var(--fundo-navbar);
+    border-radius: 16px;
+    align-items: start;
+    padding: 16px 17px 22px 17px;
+    row-gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 14px;
   }
 
   .destaques h2 {
     font-size: 20px;
     color: var(--texto-principal);
     font-weight: 600;
-    line-height: 30px;
   }
 
   .lista__destaques {
     display: flex;
     justify-content: space-between;
+    column-gap: 17px;
   }
 
   .lista__destaques__item {
     border-radius: 8px;
     border: 1px solid var(--texto-secundario);
   }
+
+  .lista__destaques__item__a p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--texto-secundario);
+    line-height: 20px;
+    padding-left: 14px;
+    padding-top: 12px;
+  }
+  .lista__destaques__item__a h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--texto-principal);
+    line-height: 20px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+  }
+
+  .lista__carreira__item__comentarios {
+    display:grid;
+    grid-template-areas:
+    "img numeros comentarios";
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding-bottom: 4px;
+  }
+
+  #img__destaques__reacao {
+    grid-area: img;
+    padding-top: 5px;
+    padding-left: 14px;
+
+  }
+
+  #numero__reacao {
+    grid-area: numeros;
+  }
+
+  #numero__comentarios {
+    grid-area: comentarios;
+    padding-right: 3px;
+  }
+
   
 
 
